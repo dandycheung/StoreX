@@ -8,7 +8,7 @@
     <a href="https://jitpack.io/#rommansabbir/StoreX"><img alt="JitPack" src="https://img.shields.io/badge/JitPack-Yes-green.svg?style=flat" height="20"/></a>
 </p>
 
-<h1 align="center"> ⚡ Latest Version: 3.1.0 | Changelog 🔰</h1>
+<h1 align="center"> ⚡ Latest Version: 3.1.1 | Changelog 🔰</h1>
 
 - Significant changes compared to `v2.1.0`.
 - Encryption is no longer bundled with the library; it's now the developer's responsibility to implement it.
@@ -34,7 +34,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.rommansabbir:StoreX:3.1.0'
+    implementation 'com.github.rommansabbir:StoreX:3.1.1'
 }
 ```
 
