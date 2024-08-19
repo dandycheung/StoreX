@@ -2,6 +2,7 @@ package com.rommansabbir.storexdemo
 
 import android.app.Application
 import com.rommansabbir.storex.StoreXCore
+import com.rommansabbir.storex.v2.SmartStoreXInitializer
 
 class MyApp : Application() {
     override fun onCreate() {
@@ -13,6 +14,7 @@ class MyApp : Application() {
                 StoreXIdentifiers.anotherConfig,
             )
         )
+        SmartStoreXInitializer.init(this)
 //        StoreXCore.setEncryptionKey("something_key")
     }
 }

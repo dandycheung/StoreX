@@ -1,3 +1,0 @@
-include ':StoreX'
-include ':app'
-rootProject.name = "StoreXDemo"
