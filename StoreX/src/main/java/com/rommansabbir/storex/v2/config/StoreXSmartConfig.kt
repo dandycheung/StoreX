@@ -6,7 +6,7 @@ import com.rommansabbir.storex.v2.strategy.StoreXCachingStrategy
 import java.lang.ref.WeakReference
 
 data class StoreXSmartConfig<T : StoreAbleObject>(
-    val context: WeakReference<Context>,
+    val context: WeakReference<Context> ? = null,
     val fileName: String,
     val xObject: T,
     val storeXCachingStrategy: StoreXCachingStrategy,

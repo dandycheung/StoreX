@@ -23,7 +23,9 @@ internal class StoreXInstance(
 ) : BaseStoreXInstance(application, prefRef), StoreX {
     internal var listener: SharedPreferences.OnSharedPreferenceChangeListener =
         SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
-            notifyClients(key, this)
+            if (key != null) {
+                notifyClients(key, this)
+            }
         }
 
     override fun put(key: String, value: StoreAbleObject): Boolean {
